@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Temperature Value</title>
+    <style>
+        .cold {
+            background-color: #6da3cd !important;
+        }
+        .hot {
+            background-color: #d97777 !important;  
+        }
+    </style>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen font-sans text-center bg-gray-200">
+
+<div class="h-[400px] w-[300px] bg-[#2b5878] rounded-3xl shadow-lg">
+
+     <div id="temperatureDisplay" class="flex justify-center items-center text-5xl w-[220px] h-[220px] rounded-full
+    border-white text-white ml-[38px] mt-8 border-[3px] cold transition-colors duration-500">
+    10°C
+</div>
+
+    <div class="flex justify-evenly items-center mt-[30px]">
+        <button id="increaseBtn" class="rounded-full w-[80px] h-[80px] border-white text-white bg-[#78797a] border-[3px]
+        focus:outline-none hover:ring-2 hover:ring-blue-500 cursor-pointer">
+        +
+    </button>
+        <button id="decreaseBtn" class="rounded-full w-[80px] h-[80px] border-white text-white bg-[#78797a] border-[3px]
+        focus:outline-none hover:ring-2 hover:ring-blue-500 cursor-pointer">
+        -
+    </button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
